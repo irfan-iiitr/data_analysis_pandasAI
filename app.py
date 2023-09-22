@@ -8,7 +8,7 @@ matplotlib.use('TkAgg')
 
 
 load_dotenv()
-API_KEY =os.environ['OPEN_ApI_KEY']
+API_KEY =os.environ['OPEN_API_KEY']
 
 from pandasai import PandasAI
 from pandasai.llm.openai import OpenAI
