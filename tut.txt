@@ -1,0 +1,7 @@
+pip install virtualenv
+Run the following command to create a virtual environment:
+
+Copied!
+python -m venv myenv
+
+myenv\Scripts\activate
