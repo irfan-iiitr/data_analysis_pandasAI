@@ -23,7 +23,7 @@ st.title("Data Analysis using Chat-GPT")
 uploaded_csv = st.file_uploader("Upload a CSV fle", type=['csv'])
 
 if uploaded_csv is not None:
-    df=pd.read_csv(uploaded_csv)
+    df=pd.read_csv(uploaded_csv, encoding='ISO-8859-1')
     pandas_ai = SmartDataframe(df, config={"llm": llm})
     st.dataframe(df.head(3))
 
